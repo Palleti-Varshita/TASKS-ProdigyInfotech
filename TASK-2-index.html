@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <link rel="stylesheet" href="TASK2-index.css">
+</head>
+<body>
+<div class="contain">
+  <div class="element"></div>
+  <div class="element"></div>
+  <div class="element"></div>
+  <div class="content">
+      <p>Clock Application</p>
+       <h3>Clock, Stopwatch and Timer</h3>
+      <p class="type">Clock</p>
+  </div>
+  <div class="main-container">
+    <div class="clock">
+      <div class="enclose">
+        <div class="main">
+          <div class="hour">
+            <p class="number" id="hour">20</p>
+              <p>hours</p>
+          </div>
+        <p class="col">:</p>
+          <div class="min">
+              <p class="number" id="min">00</p>
+              <p>minutes</p>
+          </div>
+        <p class="col">:</p>
+          <div class="sec">
+              <p class="number" id="sec">00</p>
+              <p>seconds</p>
+          </div>
+        <p class="col">:</p>
+          <div class="ampm">
+            <p class="number" id="ampm">AM</p>
+            <p id="other-ampm">PM</p>
+          </div>
+      </div>
+    </div>
+        <div class="butns">
+          <button class="butn" id="stopwatch-btn">Stopwatch</button>
+          <button class="butn" id="timer-btn">Timer</button>
+    </div>
+</div>
+<!------------------------------------------------------------------------>
+<div class="stopwatch hidden">
+  <div class="enclose">
+    <div class="main">
+      <div class="hour">
+        <p class="number" id="stopwatch-hour">00</p>
+        <p>hours</p>
+      </div>
+      <p class="col">:</p>
+      <div class="min">
+        <p class="number" id="stopwatch-min">00</p>
+        <p>minutes</p>
+      </div>
+      <p class="col">:</p>
+      <div class="sec">
+        <p class="number" id="stopwatch-sec">00</p>
+        <p>seconds</p>
+      </div>
+      <p class="col">:</p>
+      <div class="ms">
+        <p class="number" id="stopwatch-ms">00</p>
+        <p>miliseconds</p>
+      </div>
+    </div>
+  </div>
+  <div class="laps">
+  </div>
+  <div class="butns">
+    <button class="butn start-stopwatch">Start</button>
+    <button class="butn lap-stopwatch hidden">Lap</button>
+    <button class="butn reset-stopwatch">Reset</button>
+    <button class="butn back-btn">Back</button>
+  </div>
+</div>
+<!------------------------------------------------------------------------>
+<div class="timer hidden">
+  <div class="enclose">
+    <div class="main">
+      <div class="hour">
+        <p class="number" id="timer-hour">00</p>
+        <p>hours</p>
+      </div>
+      <p class="col">:</p>
+      <div class="min">
+        <p class="number" id="timer-min">00</p>
+        <p>minutes</p>
+      </div>
+      <p class="col">:</p>
+      <div class="sec">
+        <p class="number" id="timer-sec">00</p>
+        <p>seconds</p>
+      </div>
+      <p class="col">:</p>
+      <div class="ms">
+        <p class="number" id="timer-ms">00</p>
+        <p>miliseconds</p>
+      </div>
+    </div>
+  </div>
+  <div class="butns">
+    <button class="butn start-timer">Start</button>
+    <button class="butn stop-timer hidden">Stop</button>
+    <button class="butn reset-timer">Reset</button>
+    <button class="butn back-btn">Back</button>
+  </div>
+</div>
+</div>
+</div>
+<!------------------------------------------------------------------------>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+crossorigin="anonymous"></script>
+<script src="TASK2-index.js"></script>
+</body>
+</html>

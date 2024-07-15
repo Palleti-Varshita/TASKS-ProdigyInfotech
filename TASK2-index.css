@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cambria"
+}
+body {
+  min-height:700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+.contain
+{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding: 60px;
+  border-radius: 30%;
+  color: white;
+  background: rgb(188, 22, 116);
+  box-shadow: 0 18px 10px rgb(255, 140, 220);
+}
+p,i 
+{
+  font-size: 13px;
+  font-weight:bolder;
+  color: rgb(255, 200, 227);
+  text-transform: uppercase;
+}
+.content h3 
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.enclose
+{
+  padding: 30px 0;
+  border-radius: 30%;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 32px 0 rgba(40, 3, 125, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius:30%;
+  border: 3px solid rgba(179, 16, 168, 0.5);
+  transition: all 0.3s ease;
+}
+.main
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main div 
+{
+  width: 20%;
+  text-align: center;
+}
+.main .number 
+{
+  position: relative;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+}
+.main .col
+{
+  font-size: 20px;
+}
+.butns 
+{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.butn 
+{
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.butn:active 
+{
+  box-shadow: 0px 16px 15px rgb(24, 2, 38);
+  background-color: rgb(98, 0, 68);
+}
+.butn:hover
+{
+  box-shadow: 0px 8px 15px rgb(60, 0, 98);
+}
+
+.hidden 
+{
+  display: none;
+}
+.laps 
+{
+  position: relative;
+  max-height: 100px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.laps::-webkit-scrollbar 
+{
+  width: 5px;
+}
+.laps::-webkit-scrollbar-track 
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+.laps::-webkit-scrollbar-thumb 
+{
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+.lap 
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.lap:last-child 
+{
+  border-bottom: none;
+}
+.lap.active p 
+{
+  color: white;
+}
+
+.element
+{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  transform: rotate(90deg);
+  background: rgba(199, 108, 170, 0.977);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 50%;
+  border: 1px solid rgba(25, 10, 185, 0.282);
+  animation: element 10s linear infinite;
+  transition: all 0.3s ease;
+}
+.element:hover 
+{
+  animation-play-state: paused;
+  box-shadow: none;
+}
+.element:nth-child(2) 
+{
+  top: 20%;
+  left: 80%;
+  width: 100px;
+  height: 100px;
+  animation-duration: 30s;
+}
+.element:nth-child(3) 
+{
+  top: 15%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  opacity:70%;
+  border-radius: 50%;
+  animation-duration: 20s;
+}
