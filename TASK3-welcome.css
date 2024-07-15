@@ -1,0 +1,161 @@
+body
+{
+  background-image: url(w2.jpg);
+  background-size: cover;
+}
+.set1
+{
+  display: inline-block;
+  padding-left: 500px;
+}
+.text
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 80px;
+  margin-top: 60px;
+  letter-spacing: 5px;
+  color:rgb(255, 159, 245);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-right: 5px solid;
+  width:100%;
+  white-space:nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(10) ,
+  cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50%
+  {
+    border-color: transparent;
+  }  
+}
+@keyframes typing 
+{
+  from 
+  {
+    width:0;
+  }
+}
+h2{
+  position: relative;
+  font-size: 6em;
+  margin-top: 5px;
+  letter-spacing: 8px;
+  color: rgb(227, 134, 255);
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: center;
+  
+  line-height: 0.70em;
+  outline:none;
+  text-shadow: 0 0 15px palevioletred;
+  animation-name: txtanimate;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out(1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes txtanimate
+{
+  from{
+    opacity:0%;
+  }
+  to
+  {
+    opacity:100%; 
+  }
+}
+h2
+{
+  animation: animate 4s linear 1;
+}
+@keyframes animate
+ {
+  0%
+  {
+    color: rgb(186, 23, 189);
+    box-shadow: none;
+    opacity: 0%;
+  }
+  100%
+  {
+    color:  rgb(254, 179, 254);
+    text-shadow: 0 0 2px rgb(227, 134, 255),
+    0 0 5px rgb(227, 134, 255),
+    0 0 8px rgb(227, 134, 255),
+    0 0 9px rgb(227, 134, 255),
+    0 0 10px rgb(255, 177, 203);
+    opacity: 100%;
+  }
+}
+.Intro
+{
+  margin-left: 480px;
+  width:500px;
+  background-color: rgb(26, 4, 77);
+  display: flex;
+  justify-content: center;
+}
+#id
+{
+  font-size: 20px;
+  color:rgb(255, 186, 246);
+  text-align: center;
+  animation-name: txt1animate;
+  animation-duration: 13s;
+  animation-timing-function: ease-in-out(1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes txt1animate
+{
+  from{
+    opacity:0%;
+  }
+  to
+  {
+    opacity:100%; 
+  }
+}
+form{
+  margin:2px;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#submit1
+{
+  padding-top:4px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor:pointer;
+  width:150px;
+  height:50px;
+  font-size: 30px;
+  color:rgb(54, 0, 74);
+  background-color: rgb(250, 162, 255);
+  transition: all 0.8s;
+  border-color: rgb(52, 0, 100);
+  border-width: 3px;
+  border-radius: 10px;
+}
+#submit1:hover
+{
+  background-color: purple;
+  color:white;
+  box-shadow:0 3px 10px pink;
+}
+form ,#submit
+{
+  animation-name: txt1animate;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out(1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
